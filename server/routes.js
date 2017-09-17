@@ -15,10 +15,17 @@ const scopes = ['user-read-private', 'user-read-email'];
 
 // configure spotify
 const spotifyApi = new Spotify({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET,
-  redirectUri: REDIRECT_URI
+  clientId: 'd4534bb8983d4b24ad466dcbc2c9b330',
+  clientSecret: 'e0882e13cf41472fad64673bee936c31',
+  redirectUri: 'http://localhost:3000/callback'
 });
+
+// var PythonShell = require('python-shell');
+
+// PythonShell.run('my_script.py', function (err) {
+//   if (err) throw err;
+//   console.log('finished');
+// });
 
 /** Generates a random string containing numbers and letters of N characters */
 const generateRandomString = N => (Math.random().toString(36)+Array(N).join('0')).slice(2, N+2);

@@ -1,6 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
 
+
+
+
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
@@ -16,6 +19,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.svg$/, loaders: ['raw-loader']},
+
       // take all less files, compile them, and bundle them in with our js bundle
       { test: /\.less$/, loader: 'style!css!autoprefixer?browsers=last 2 version!less' },
       {
